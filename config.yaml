@@ -1,0 +1,15 @@
+# File: config.yaml
+luna_client:
+  installer_path: "softwares/LunaHSMClient.exe"
+  install_dir: "C:\\Program Files\\SafeNet\\LunaClient"
+  install_args: "/quiet /norestart ADDLOCAL=ALL"
+
+cert:
+  common_name: null  # Will use system hostname if not specified
+
+ntls:
+  hsm_ip: "192.168.1.2"
+  server_cert_path: "dependencies/server.pem"
+  partition_name: ""
+  partition_password: ""
+  username: "admin"  # optional, default is admin
